@@ -7,7 +7,7 @@ bwa mem ../Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.f
 sambamba view -S -f bam na12878_wes.sam > na12878_wes.bam
 
 # Mark duplicates
-sambamba markdupe na12878_wes.sorted.bam dedupped_na12878_wes.sorted.bam
+sambamba markdup \na12878_wes.sorted.bam \dedupped_na12878_wes.sorted.bam
 
 # Sort the BAM file
 sambamba sort na12878_wes.bam
